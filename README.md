@@ -4,6 +4,8 @@ Overview:
 
 This project focuses on developing a predictive model to estimate insurance premiums based on population trends. The dataset includes key features such as age, sex, BMI (Body Mass Index), number of children, smoking status, and region. By analyzing these features, the goal is to create a model that can accurately predict insurance charges for individuals, even with limited information about them.
 
+![sneak peek](https://ibb.co/8sXygn5)
+
 Dataset:
 
 The dataset contains the following features:
