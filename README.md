@@ -38,6 +38,4 @@ Hatim Berghaz
 
 Acknowledgments:
 
-Special thanks to MIRI CHOI for providing the insurance data used in this project.
-
 Dataset link : https://www.kaggle.com/datasets/mirichoi0218/insurance
