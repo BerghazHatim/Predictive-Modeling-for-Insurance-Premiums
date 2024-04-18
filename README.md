@@ -30,14 +30,12 @@ Usage:
 8. pipeline : Contains predict and train pipeline.
 9. predict pipeline : Responsable for reading inputs from the UI and gives back result.
 10. templates : Contains the User Interface.
-11. app.py : Flask app.
+11. application.py : Flask app.
 
 Authors:
 
 Hatim Berghaz
 
 Acknowledgments:
-
-Special thanks to MIRI CHOI for providing the insurance data used in this project.
 
 Dataset link : https://www.kaggle.com/datasets/mirichoi0218/insurance
