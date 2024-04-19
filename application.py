@@ -6,6 +6,7 @@ from sklearn.preprocessing import StandardScaler
 from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent))
 from src.pipeline.predict_pipeline import CustomData,PredictPipeline
+from src.pipeline.train_pipeline import trainPipeline
 
 app = Flask(__name__)
 
@@ -26,11 +27,13 @@ def predict_datapoint():
             smoker=request.form.get('smoker'),
             region=request.form.get('region'),
         )
-
-        pred_df = data.get_data_as_data_frame()
+        
+        userinput = data.get_data_as_data_frame()
 
         predict_pipeline = PredictPipeline()
-        results = predict_pipeline.predict(pred_df)
+        trainingPipeline = trainPipeline()
+        trainingPipeline.training(userinput)
+        results = predict_pipeline.predict(userinput)
         return render_template('home.html',results = results[0])
 
 if __name__ == '__main__':
